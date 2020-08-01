@@ -3,18 +3,15 @@
 These codes are based on https://github.com/jacobgil/pytorch-grad-cam.
 
 ### XGrad-cam.py ### 
-The main difference between XGrad_CAM and Grad_CAM located at line 113 - line119:
-####  Grad_CAM  ####
+The main difference between XGrad-CAM and Grad-CAM located at line 113 - line119:
+####  Grad-CAM  ####
 `weights = np.mean(grads_val, axis=(2, 3))[0, :]`
-####  XGrad_CAM  ####
+####  XGrad-CAM  ####
 `X_weights = np.sum(grads_val[0, :] * target, axis=(1, 2))`
 
 `X_weights = X_weights / (np.sum(target, axis=(1, 2)) + 1e-6)`
 
 Usage: `python XGrad-cam.py --image-path <path_to_image>`
-
-To use with CUDA:
-`python XGrad-cam.py --image-path <path_to_image> --use-cuda`
 
 Results:
 
