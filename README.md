@@ -4,9 +4,9 @@ These codes are based on https://github.com/jacobgil/pytorch-grad-cam.
 
 ### XGrad-cam.py ### 
 The main difference located at line 113 - line119:
-# Grad_CAM
+####  Grad_CAM  ####
 `weights = np.mean(grads_val, axis=(2, 3))[0, :]`
-# XGrad_CAM
+####  XGrad_CAM  ####
 `X_weights = np.sum(grads_val[0, :] * target, axis=(1, 2))`
 `X_weights = X_weights / (np.sum(target, axis=(1, 2)) + 1e-6)`
 
@@ -16,6 +16,7 @@ To use with CUDA:
 `python XGrad-cam.py --image-path <path_to_image> --use-cuda`
 
 Results:
+
 ![Dog](https://github.com/jacobgil/pytorch-grad-cam/blob/master/examples/dog.jpg?raw=true) ![Cat](https://github.com/jacobgil/pytorch-grad-cam/blob/master/examples/cat.jpg?raw=true)
 ----------
 
@@ -26,5 +27,6 @@ exists a specific equation between the class score and the feature maps of the l
 Usage: `python proof.py`
 
 The result will show that `class_score-gradients*feature-bias_term=0`
+----------
 
 Thanks to Jacob Gildenblat for the beautiful original code.
