@@ -109,14 +109,15 @@ class GradCam:
 
         target = features[-1]
         target = target.cpu().data.numpy()[0, :]
-
-        # Grad_CAM
-        weights = np.mean(grads_val, axis=(2, 3))[0, :]
-        cam = np.zeros(target.shape[1:], dtype=np.float32)
+        
         # XGrad_CAM
-        X_cam = np.zeros(target.shape[1:], dtype=np.float32)
         X_weights = np.sum(grads_val[0, :] * target, axis=(1, 2))
         X_weights = X_weights / (np.sum(target, axis=(1, 2)) + 1e-6)
+        # Grad_CAM
+        weights = np.mean(grads_val, axis=(2, 3))[0, :]
+        
+        X_cam = np.zeros(target.shape[1:], dtype=np.float32)
+        cam = np.zeros(target.shape[1:], dtype=np.float32)
 
         for i, w in enumerate(weights):
             cam += w * target[i, :, :]

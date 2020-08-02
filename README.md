@@ -18,7 +18,7 @@ Biao Li,
 ----------
 
 ### XGrad-cam.py
-The main difference between XGrad-CAM and Grad-CAM located at line 113 - line119:
+The main difference between XGrad-CAM and Grad-CAM located at line 113 - line117:
 #####  Grad-CAM 
 `weights = np.mean(grads_val, axis=(2, 3))[0, :]`
 #####  XGrad-CAM
@@ -26,7 +26,7 @@ The main difference between XGrad-CAM and Grad-CAM located at line 113 - line119
 
 `X_weights = X_weights / (np.sum(target, axis=(1, 2)) + 1e-6)`
 
-Usage: `python XGrad-cam.py --image-path <path_to_image>`
+Usage: `python XGrad-cam.py --image-path <path_to_image> --use-cuda <True/False>`
 
 Results:
 
