@@ -1,4 +1,4 @@
-## XGrad-CAM implementation in Pytorch ##
+# XGrad-CAM implementation in Pytorch 
 
 code for the paper:
 ### Axiom-based Grad-CAM: Towards Accurate Visualization and Explanation of CNNs
