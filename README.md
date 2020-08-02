@@ -1,6 +1,6 @@
 # XGrad-CAM implementation in Pytorch 
 
-code for the paper:
+Code for the paper:
 ### Axiom-based Grad-CAM: Towards Accurate Visualization and Explanation of CNNs
 
 To be presented at **BMVC 2020**,
@@ -21,6 +21,7 @@ Biao Li,
 The main difference between XGrad-CAM and Grad-CAM located at line 113 - line117:
 #####  XGrad-CAM
 `X_weights = np.sum(grads_val[0, :] * target, axis=(1, 2))`
+
 `X_weights = X_weights / (np.sum(target, axis=(1, 2)) + 1e-6)`
 #####  Grad-CAM 
 `weights = np.mean(grads_val, axis=(2, 3))[0, :]`
