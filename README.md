@@ -35,7 +35,7 @@ Results:
 ----------
 
 ### Proof_verify.py
-This is a script of experimental proof for our claim that given an arbitrary layer in ReLU-CNNs, there
+This is a simple script of experimental proof for our claim that given an arbitrary layer in ReLU-CNNs, there
 exists a specific equation between the class score and the feature maps of the layer.
 
 Usage: `python proof.py`
