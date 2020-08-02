@@ -15,9 +15,11 @@ Yinghui Gao and
 Biao Li,
 <br>
 
-### XGrad-cam.py ### 
+----------
+
+#### XGrad-cam.py ### 
 The main difference between XGrad-CAM and Grad-CAM located at line 113 - line119:
-####  Grad-CAM  ####
+#####  Grad-CAM  ####
 `weights = np.mean(grads_val, axis=(2, 3))[0, :]`
 ####  XGrad-CAM  ####
 `X_weights = np.sum(grads_val[0, :] * target, axis=(1, 2))`
