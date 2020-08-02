@@ -1,6 +1,19 @@
 ## XGrad-CAM implementation in Pytorch ##
 
-These codes are based on https://github.com/jacobgil/pytorch-grad-cam.
+code for the paper:
+### Axiom-based Grad-CAM: Towards Accurate Visualization and Explanation of CNNs
+
+To be presented at **BMVC 2020**,
+<br>
+Authors:
+<br>
+Ruigang Fu,
+Qingyong Hu,
+Xiaohu Dong,
+Yulan Guo,
+Yinghui Gao and
+Biao Li,
+<br>
 
 ### XGrad-cam.py ### 
 The main difference between XGrad-CAM and Grad-CAM located at line 113 - line119:
@@ -29,4 +42,5 @@ The result will show that `class_score-gradients*feature-bias_term=0`
 
 ----------
 
+These codes are based on https://github.com/jacobgil/pytorch-grad-cam.
 Thanks to Jacob Gildenblat for the beautiful original code.
