@@ -20,7 +20,7 @@ Biao Li,
 ### XGrad-cam.py
 XGrad-CAM is a CNN visualization method, try to explain why classification CNNs predict what they predict. It is class-discriminative, efficient and able to highlight the regions belonging to the objects of interest.
 
-<img src="https://github.com/Fu0511/XGrad-CAM/blob/master/examples/XGrad-CAM.png" width="40%">
+<img src="https://github.com/Fu0511/XGrad-CAM/blob/master/examples/XGrad-CAM.png" width="70%">
 
 The main difference between XGrad-CAM and Grad-CAM locates at line 113 - line117:
 #####  XGrad-CAM
