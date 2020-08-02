@@ -31,6 +31,7 @@ Usage: `python XGrad-cam.py --image-path <path_to_image> --use-cuda <True/False>
 Results:
 
 ![Grad-CAM](https://github.com/Fu0511/XGrad-CAM/blob/master/examples/cam.jpg) ![XGrad-CAM](https://github.com/Fu0511/XGrad-CAM/blob/master/examples/X_cam.jpg)
+
 Left is Grad-CAM. Right is XGrad-CAM
 ----------
 
