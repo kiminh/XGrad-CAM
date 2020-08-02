@@ -3,7 +3,7 @@
 Code for the paper:
 ### Axiom-based Grad-CAM: Towards Accurate Visualization and Explanation of CNNs
 
-To be presented at **BMVC 2020**,
+to be presented at **BMVC 2020**,
 <br>
 Authors:
 <br>
@@ -18,7 +18,7 @@ Biao Li,
 ----------
 
 ### XGrad-cam.py
-The main difference between XGrad-CAM and Grad-CAM located at line 113 - line117:
+The main difference between XGrad-CAM and Grad-CAM locates at line 113 - line117:
 #####  XGrad-CAM
 `X_weights = np.sum(grads_val[0, :] * target, axis=(1, 2))`
 
