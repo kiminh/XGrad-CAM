@@ -28,11 +28,9 @@ The main difference between XGrad-CAM and Grad-CAM locates at line 113 - line117
 
 Usage: `python XGrad-cam.py --image-path <path_to_image> --use-cuda <True/False>`
 
-Results:
+Results (left is Grad-CAM, right is XGrad-CAM):
 
 ![Grad-CAM](https://github.com/Fu0511/XGrad-CAM/blob/master/examples/cam.jpg) ![XGrad-CAM](https://github.com/Fu0511/XGrad-CAM/blob/master/examples/X_cam.jpg)
-
-Left is Grad-CAM. Right is XGrad-CAM
 
 ----------
 
