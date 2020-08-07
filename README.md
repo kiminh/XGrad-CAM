@@ -31,6 +31,7 @@ The main difference between XGrad-CAM and Grad-CAM locates at line 113 - line117
 `weights = np.mean(grads_val, axis=(2, 3))[0, :]`
 
 Usage: `python XGrad-cam.py --image-path <path_to_image>` for CPU computation
+       
        `python XGrad-cam.py --image-path <path_to_image> --use-cuda` for GPU acceleration.
 
 Results (left is Grad-CAM, right is XGrad-CAM):
