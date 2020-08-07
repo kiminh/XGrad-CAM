@@ -39,6 +39,7 @@ Output: `class of interest:  n02087394 Rhodesian ridgeback`
 Results:
 
 ![Grad-CAM](https://github.com/Fu0511/XGrad-CAM/blob/master/examples/cam.jpg) ![XGrad-CAM](https://github.com/Fu0511/XGrad-CAM/blob/master/examples/X_cam.jpg)
+
 left is Grad-CAM, right is XGrad-CAM
 
 ----------
@@ -49,7 +50,7 @@ exists a specific equation between the class score and the feature maps of the l
 
 Usage: `python Proof_verify.py --image-path <path_to_image> --target-index <class_of_interest>`
 
-The result will show that `class_score-gradients*feature-bias_term=0`
+For any class of interest, the result will show that `class_score-gradients*feature-bias_term=0`
 
 ----------
 
