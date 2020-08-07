@@ -50,3 +50,14 @@ The result will show that `class_score-gradients*feature-bias_term=0`
 
 These codes are based on https://github.com/jacobgil/pytorch-grad-cam.
 Thanks to the author Jacob Gildenblat for the beautiful original code.
+If these codes are useful to you, please cite our work:
+```
+@misc{fu2020axiombased,
+    title={Axiom-based Grad-CAM: Towards Accurate Visualization and Explanation of CNNs},
+    author={Ruigang Fu and Qingyong Hu and Xiaohu Dong and Yulan Guo and Yinghui Gao and Biao Li},
+    year={2020},
+    eprint={2008.02312},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+```
