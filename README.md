@@ -1,7 +1,7 @@
 # XGrad-CAM implementation in Pytorch 
 
 Code for the paper:
-### Axiom-based Grad-CAM: Towards Accurate Visualization and Explanation of CNNs
+### [Axiom-based Grad-CAM: Towards Accurate Visualization and Explanation of CNNs](https://arxiv.org/pdf/2008.02312v1)
 
 to be presented at **BMVC 2020**,
 <br>
@@ -40,7 +40,7 @@ Results (left is Grad-CAM, right is XGrad-CAM):
 
 ### Proof_verify.py
 This is a simple script of experimental proof for our statement that given an arbitrary layer in ReLU-CNNs, there
-exists a specific equation between the class score and the feature maps of the layer (Eq.5 in our paper).
+exists a specific equation between the class score and the feature maps of the layer (Eq.(5) in our paper).
 
 Usage: `python Proof_verify.py`
 
