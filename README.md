@@ -22,7 +22,7 @@ XGrad-CAM is a CNN visualization method, try to explain why classification CNNs 
 
 <img src="https://github.com/Fu0511/XGrad-CAM/blob/master/examples/XGrad-CAM.png" width="70%">
 
-The main difference between XGrad-CAM and Grad-CAM locates at line 113 - line117:
+The main difference between XGrad-CAM and Grad-CAM locates at line 116 - line120:
 #####  XGrad-CAM
 `X_weights = np.sum(grads_val[0, :] * target, axis=(1, 2))`
 

@@ -87,6 +87,8 @@ class GradCam:
         if index == -1:
             index = np.argmax(output.cpu().data.numpy())
 
+        synset = [l.strip() for l in open('./synset.txt').readlines()]
+        print("class of interest: ", synset[index])
         one_hot = np.zeros((1, output.size()[-1]), dtype=np.float32)
         one_hot[0][index] = 1
         one_hot = torch.from_numpy(one_hot).requires_grad_(True)
