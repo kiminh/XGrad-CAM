@@ -84,13 +84,13 @@ class GradCam:
     def forward(self, input):
         return self.model(input)
 
-    def __call__(self, input, index=None):
+    def __call__(self, input, index=-1):
         if self.cuda:
             features, output = self.extractor(input.cuda())
         else:
             features, output = self.extractor(input)
 
-        if index == None:
+        if index == -1:
             index = np.argmax(output.cpu().data.numpy())
 
         one_hot = np.zeros((1, output.size()[-1]), dtype=np.float32)
@@ -141,6 +141,8 @@ def get_args():
                         help='Use NVIDIA GPU acceleration')
     parser.add_argument('--image-path', type=str, default='./examples/both.png',
                         help='Input image path')
+    parser.add_argument('--target-index', type=int, default= -1,
+                        help='class of interest')
     args = parser.parse_args()
     args.use_cuda = args.use_cuda and torch.cuda.is_available()
     if args.use_cuda:
@@ -164,9 +166,9 @@ if __name__ == '__main__':
     img = np.float32(cv2.resize(img, (224, 224))) / 255
     input = preprocess_image(img)
 
-    # If None, returns the map for the highest scoring category.
+    # If -1, returns the map for the highest scoring category.
     # Otherwise, targets the requested index.
-    target_index = None
+    target_index = args.target_index
     [cam, X_cam] = grad_cam(input, target_index)
 
     show_cam_on_image(img, cam, 'cam')

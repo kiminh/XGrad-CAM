@@ -30,7 +30,7 @@ The main difference between XGrad-CAM and Grad-CAM locates at line 113 - line117
 #####  Grad-CAM 
 `weights = np.mean(grads_val, axis=(2, 3))[0, :]`
 
-Usage: `python XGrad-cam.py --image-path <path_to_image>` for CPU computation, add `--use-cuda` for GPU acceleration.
+Usage: `python XGrad-cam.py --image-path <path_to_image> --target-index <class_of_interest>` for CPU computation, add `--use-cuda` for GPU acceleration.
 
 Results (left is Grad-CAM, right is XGrad-CAM):
 
@@ -42,7 +42,7 @@ Results (left is Grad-CAM, right is XGrad-CAM):
 This is a simple script of experimental proof for our statement that given an arbitrary layer in ReLU-CNNs, there
 exists a specific equation between the class score and the feature maps of the layer (Eq.(5) in our paper).
 
-Usage: `python Proof_verify.py`
+Usage: `python Proof_verify.py --image-path <path_to_image> --target-index <class_of_interest>`
 
 The result will show that `class_score-gradients*feature-bias_term=0`
 
