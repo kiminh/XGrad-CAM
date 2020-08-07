@@ -153,7 +153,7 @@ def get_args():
 
 
 if __name__ == '__main__':
-    """ python XGrad-cam.py --image-path <path_to_image> --use-cuda <True/False>"""
+    """ python XGrad-cam.py --image-path <path_to_image> --use-cuda"""
 
     args = get_args()
 	
