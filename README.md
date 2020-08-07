@@ -32,7 +32,7 @@ The main difference between XGrad-CAM and Grad-CAM locates at line 116 - line120
 
 Usage: `python XGrad-cam.py --image-path <path_to_image> --target-index <class_of_interest>` for CPU computation, add `--use-cuda` for GPU acceleration.
 
-Example: `python XGrad-CAM.py --image-path ./examples/ILSVRC2012_val_00000077.JPEG --use-cuda`
+Example: `python XGrad-CAM.py --image-path ./examples/ILSVRC2012_val_00000077.JPEG --target-index 159 --use-cuda`
 
 Output: `class of interest:  n02087394 Rhodesian ridgeback`
 
