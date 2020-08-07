@@ -34,13 +34,13 @@ Usage: `python XGrad-cam.py --image-path <path_to_image> --target-index <class_o
 
 Example: `python XGrad-CAM.py --image-path ./examples/ILSVRC2012_val_00000077.JPEG --use-cuda`
 
-Output: `Using GPU for acceleration` 
-	`class of interest:  n02087394 Rhodesian ridgeback`
+Output: `class of interest:  n02087394 Rhodesian ridgeback`
 
-Results (left is Grad-CAM, right is XGrad-CAM):
+Results:
 
 ![Grad-CAM](https://github.com/Fu0511/XGrad-CAM/blob/master/examples/cam.jpg) ![XGrad-CAM](https://github.com/Fu0511/XGrad-CAM/blob/master/examples/X_cam.jpg)
 
+left is Grad-CAM, right is XGrad-CAM
 ----------
 
 ### Proof_verify.py
