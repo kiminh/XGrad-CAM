@@ -41,6 +41,7 @@ Results:
 ![Grad-CAM](https://github.com/Fu0511/XGrad-CAM/blob/master/examples/cam.jpg) ![XGrad-CAM](https://github.com/Fu0511/XGrad-CAM/blob/master/examples/X_cam.jpg)
 
 left is Grad-CAM, right is XGrad-CAM
+
 ----------
 
 ### Proof_verify.py
