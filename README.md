@@ -39,8 +39,8 @@ Results (left is Grad-CAM, right is XGrad-CAM):
 ----------
 
 ### Proof_verify.py
-This is a simple script of experimental proof for our claim that given an arbitrary layer in ReLU-CNNs, there
-exists a specific equation between the class score and the feature maps of the layer.
+This is a simple script of experimental proof for our statement that given an arbitrary layer in ReLU-CNNs, there
+exists a specific equation between the class score and the feature maps of the layer (Eq.5 in our paper).
 
 Usage: `python Proof_verify.py`
 
@@ -50,6 +50,7 @@ The result will show that `class_score-gradients*feature-bias_term=0`
 
 These codes are based on https://github.com/jacobgil/pytorch-grad-cam.
 Thanks to the author Jacob Gildenblat for the beautiful original code.
+
 If these codes are useful to you, please cite our work:
 ```
 @misc{fu2020axiombased,
